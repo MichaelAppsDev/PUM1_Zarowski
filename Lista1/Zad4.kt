@@ -1,8 +1,6 @@
 fun isPerfect(number: Int): String {
-    // Obliczanie sumy dzielników właściwych
     val sumOfDivisors = (1 until number).filter { number % it == 0 }.sum()
 
-    // Klasyfikacja liczby
     return when {
         sumOfDivisors == number -> "Doskonala"  // Doskonała
         sumOfDivisors > number -> "Obfita"  // Obfita
