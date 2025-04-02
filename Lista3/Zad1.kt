@@ -1,6 +1,6 @@
 fun findDuplicates(Lst: List<Int>): List<Int> {
     val duplicates = mutableListOf<Int>()
-    for (i in 0 until Lst.size) {
+    for (i in 0 until Lst.size - 1) {
         for (j in i + 1 until Lst.size) {
             if (Lst[i] == Lst[j]) {
                 if (!duplicates.contains(Lst[i])) {
